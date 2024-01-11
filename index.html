@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: hsl(233, 47%, 7%);
+      font-family: 'Intern',sans-serif;
+    }
+
+    .card{
+      display: grid;
+      grid-template-columns: 30px 120px 120px 120px 80px 540px;
+      grid-template-rows: 0.5fr 0.3fr 0.5fr;
+      background-color: hsl(244, 38%, 16%);
+      color: hsl(0, 0%, 100%);
+
+      border-radius: 15px;
+    }
+
+    .card h1{
+      grid-column: 2/5;
+      font-size: 32px;
+      margin-top: 5rem;
+      margin-left: 2rem;
+    }
+
+    em{
+      font-style: normal;
+      color: hsl(277, 64%, 61%);
+    }
+
+    .desc{
+      grid-area: 2/2/3/5;
+      margin-left: 2rem;
+      margin-top: rem;
+      font-size: 14px;
+      font-family: 'Lexend Deca',sans-serif;
+      color: hsla(0, 0%, 100%, 0.75);
+      line-height: 25px;
+    }
+    .companies{
+      grid-area: 3/2/3/4;
+      margin-left: 2rem;
+      margin-top: 4rem;
+      
+    }
+
+    .templates{
+      grid-area: 3/3/3/4;
+      margin-left: 2rem;
+      margin-top: 4rem;
+    }
+
+    .queries{
+      grid-area: 3/4/3/4;
+      margin-left: 2rem;
+      margin-top: 4rem;
+    }
+
+    img{
+      grid-area: 1/6/6;
+      border-radius: 0 15px 15px 0;  
+  }
+
+  span{
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: 'Lexend Deca',sans-serif;
+    
+  }
+
+  p{
+    font-size: 10px;
+    font-family: 'Lexend Deca',sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+
+  .background{
+    grid-area: 1/6/6;
+    background-color:  hsl(277, 100%, 23%);
+    opacity: 50%;
+  }
+  
+
+
+  </style>
+</head>
+<body>
+  
+  <section class="card">
+    
+  <h1>Get <em>insights</em> that help your business grow.</h1>
+
+  <p class="desc">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+    experience, and overall efficiency.</p>
+    <div class="companies">
+      <span>10k+ </span>
+      <p>COMPANIES</p>
+
+    </div>
+    <div class="templates">
+      <span>314 </span>
+      <p>TEMPLATES</p>
+    </div>
+    <div class="queries">
+      <span>12M+ </span>
+      <p>QUERIES</p>
+    </div>
+
+    <img src="images/image-header-desktop.jpg">
+    <div class="background"></div>
+
+  </section>
+
+</body>
+</html>
